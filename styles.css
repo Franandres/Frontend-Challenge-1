@@ -1,0 +1,85 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.allclasses {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Lexend Deca", 'Times New Roman', Times, serif;
+}
+
+.sedans {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.suvs {
+background-color: cyan;
+}
+
+.luxury {
+    background-color: darkcyan;
+    padding: 20px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    width: 100px;
+    height: 30px;
+    margin-top: 40px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.linksedans:hover {
+    background-color: orange;
+}
+.linksuvs:hover {
+    background-color: cyan;
+}
+
+.linkluxury:hover {
+    background-color: darkcyan;
+}
+
+.links:hover {
+   border: 2px solid white;
+   transition: 150ms;
+   color: white;
+}
+
+.texts {
+    font-size: 16px;
+    padding: 20px 0px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    height: 400px;
+}
+
+@media (max-width: 500px) {
+    .allclasses {
+        display: flex;
+        flex-direction: column;
+    }
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+}
+
